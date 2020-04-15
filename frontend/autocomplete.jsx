@@ -13,12 +13,20 @@ class Autocomplete extends React.Component{
             displayList:null,
             inputVal:'',
             listItems : [ 
-                { id: 0 , text: 'dhamma'},{ id: 1 , text: 'dhanushka' } , { id: 2 , text:'success'}, { id: 3 , text: 'nibbana'}
+                { id: 0 , text: 'Abba'},
+                { id: 1 , text: 'Barney' } , 
+                { id: 2 , text:'Barbara'}, 
+                { id: 3 , text: 'Jeff'},
+                { id: 4 , text: 'Jenny'},
+                { id: 5 , text: 'Sarah'},
+                { id: 6 , text: 'Sally'},
+                { id: 7 , text: 'Xander'}
             ]    
         }
           
     }
-
+        
+    
     getItems(e){
         const displayArr = [];
         
@@ -30,7 +38,7 @@ class Autocomplete extends React.Component{
                     const currentItem = this.state.listItems[i].text.substring(0,e.target.value.length);
                                  
                                       
-                    if( e.target.value === currentItem  ){    
+                    if( e.target.value.toLowerCase() === currentItem.toLowerCase()    ){    
                         console.log("curentItem:" +currentItem)                    
                         displayArr.push(
                                 { id: this.state.listItems[i].id,

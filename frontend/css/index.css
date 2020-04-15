@@ -84,12 +84,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   margin-right: 0;
   float:left;
   width: 88.2px; 
   border-radius: 10px 10px 0 0;
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: khaki;  
 }
 
@@ -110,32 +110,39 @@ article{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 269px;
+  width: 272px;
   height: 250px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-top: none;
 }
 
 .weather-container{
-  width: 155px;
+  width: 200px;
   position: relative;
   top: 85px;
-  left: 50px;
   line-height: 35px;
   background-color: aliceblue;
+  border: 2px solid;
+  padding-left: 5px;
 }
 
-.autocomplete-container{
+.autocomplete-container {
   position: relative;
-  top: 125px;
+  top: -20px;
+  left: 225px;
   background-color: plum;
-  height: 200px;
+  border: 2px solid;
+  height: 235px;
+  width: 200px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 input{
   position: relative;
   top: 20px;
-  left: -105px;
+  background-color:whitesmoke;
+  border: 1px solid;
 }
 
 .autocomplete-list{

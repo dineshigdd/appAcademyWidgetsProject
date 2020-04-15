@@ -11,13 +11,13 @@ class  Tabs extends React.Component {
        this.changeBorder = this.changeBorder.bind(this);
 
         this.state = { idx :  1,    
-                       css1: "tab-header",
-                       css2: "tab-header",
-                       css3: "tab-header"
-                                        }
+                       content:'This is first page',
+                       css1: 'tab-header tab-header-border',
+                       css2: 'tab-header',
+                       css3: 'tab-header'
+                    }
          }
     clickHandler(num){
-             //   alert(num)
          this.setState({idx: num});
          this.changeBorder(num);    
     }
@@ -25,18 +25,21 @@ class  Tabs extends React.Component {
     changeBorder(num) {
         if( num == 1){
             this.setState({
+                content:'This is first page',
                 css1: 'tab-header tab-header-border',
                 css2: 'tab-header',
                 css3: 'tab-header'
                 });
         }else if( num == 2 ){
             this.setState({
+                content:'This is second page',
                 css1: 'tab-header',
                 css2: 'tab-header tab-header-border',
                 css3: 'tab-header'
             });
         }else{
             this.setState({
+                content:'This is third page',
                 css1: 'tab-header',
                 css2: 'tab-header',
                 css3: 'tab-header tab-header-border'
@@ -57,7 +60,7 @@ class  Tabs extends React.Component {
                     <h1 className={ this.state.css2 } onClick={ () => this.clickHandler(2) }>two</h1>
                     <h1 className={ this.state.css3 } onClick={ () => this.clickHandler(3) }>three</h1>
         
-                    <article >{ this.state.idx }</article>
+                    <article >{ this.state.content }</article>
                         
                 </ul>
             </div>
