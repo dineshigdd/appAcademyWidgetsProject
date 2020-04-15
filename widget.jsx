@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 const Root = ()=>
-     <div>
+     <div className="main">
          <Clock/>        
-         <Tabs title="title" content ="content" />  
+         <Tabs/>  
          <Weather/>
          <Autocomplete/>
     </div>;

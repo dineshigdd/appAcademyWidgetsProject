@@ -17,12 +17,17 @@ span, article, footer, time, small {
   box-sizing: inherit;
   background: transparent;
   font-family: inherit;  
-
+  overflow: hidden;/*remove scrollbar in the browser*/
   }
+
   body{
     display: flex;
     justify-content: space-around;
   }
+
+.main{
+  width: 500px;
+}
 
 ul {
   list-style: none;
@@ -54,7 +59,7 @@ input[type="submit"] {
 }
 
 h1 {
-  margin-left: 0 !important;
+  margin-left: 0 !important;  
 }
 
 .widget-container{
@@ -66,8 +71,9 @@ h1 {
   flex-direction: column;
   background-color: burlywood;  
   color: brown;    
-  font-size: 24px;
+  font-size: 22px;
   width:300px;
+  line-height: 15px;
   border: 2px solid black;
 }
 
@@ -101,6 +107,7 @@ h1 {
 
 .tab-header-border{
    border-bottom:1px solid khaki;  
+   font-weight: bold;
 }
 
 article{
@@ -111,7 +118,7 @@ article{
   justify-content: center;
   align-items: center;
   width: 272px;
-  height: 250px;
+  height: 192px;
   border: 2px solid black;
   border-top: none;
 }
@@ -119,23 +126,31 @@ article{
 .weather-container{
   width: 200px;
   position: relative;
-  top: 85px;
+  top: 0px;
   line-height: 35px;
   background-color: aliceblue;
   border: 2px solid;
   padding-left: 5px;
 }
 
-.autocomplete-container {
+.autocomplete-container{
   position: relative;
-  top: -20px;
-  left: 225px;
-  background-color: plum;
-  border: 2px solid;
-  height: 235px;
+  top: -171px;
+  left:225px;
+}
+.autocomplete-list-container{
+  position: relative;
+  top: 0px;
+  left:0px;
+  background-color: violet;
+  border: 2px solid black;
+  height: 225px;
   width: 200px;
   padding-left: 10px;
   padding-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 input{
@@ -143,6 +158,8 @@ input{
   top: 20px;
   background-color:whitesmoke;
   border: 1px solid;
+  width: 187px;
+  color:gray;
 }
 
 .autocomplete-list{

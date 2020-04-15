@@ -86,11 +86,13 @@ class Autocomplete extends React.Component{
 
     render(){
         return(
-            <div className="autocomplete-container">Autocomplete
+            <div className="autocomplete-container"><h1>Autocomplete</h1>
+            <div className="autocomplete-list-container">
             <input onChange={this.getItems} placeholder="Search..." />
             <ul className='autocomplete-list'>
                  { this.createList() }
             </ul>          
+            </div>
             </div>
         );
         

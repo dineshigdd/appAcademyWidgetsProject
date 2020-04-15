@@ -53,12 +53,12 @@ class  Tabs extends React.Component {
     render(){
         const { isBorderVisible } = this.state;
         return(
-            <div>
+            <div><h1>Tabs</h1>
                 <ul>                          
 
-                    <h1 className={ this.state.css1 } onClick={ () => this.clickHandler(1)}>one</h1>
-                    <h1 className={ this.state.css2 } onClick={ () => this.clickHandler(2) }>two</h1>
-                    <h1 className={ this.state.css3 } onClick={ () => this.clickHandler(3) }>three</h1>
+                    <p className={ this.state.css1 } onClick={ () => this.clickHandler(1)}>one</p>
+                    <p className={ this.state.css2 } onClick={ () => this.clickHandler(2) }>two</p>
+                    <p className={ this.state.css3 } onClick={ () => this.clickHandler(3) }>three</p>
         
                     <article >{ this.state.content }</article>
                         
