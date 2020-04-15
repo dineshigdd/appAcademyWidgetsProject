@@ -21,8 +21,7 @@ class Autocomplete extends React.Component{
 
     getItems(e){
         const displayArr = [];
-        const displayArrIdx = 0;
-        const displayArrID = 0;
+        
     
        this.setState( { inputVal: e.target.value});                       
 
